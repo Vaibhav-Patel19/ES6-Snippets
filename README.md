@@ -23,7 +23,7 @@
         console.log(person.name)
 
 
-##### This Keyword
+#### This Keyword
 
 A function will create its own context with 'this' keyword. A this keyword will have context of function in which it is present. But not for a function which may be present outside it's function's function. 
     Eg : 
@@ -45,34 +45,35 @@ A function will create its own context with 'this' keyword. A this keyword will 
 
         + It will print 'undefined' as this keyword does not have any context to id.
 
-##### Arrow Functions     
+#### Arrow Functions     
 
 + Normal Function : 
 
-var func = function(parameter1, parameter2){
-    // body 
-}
+        var func = function(parameter1, parameter2){
+            // body 
+        }
 
-function closeForm(p1, p2) {
-    // body
-}
+        function closeForm(p1, p2) {
+            // body
+        }
 
 + Arrow Functions
 
-const func = (p1, p2) => {
-    //body
-}
+        const func = (p1, p2) => {
+            //body
+        }
 
-closeForm = (p1, p2) => {
-    // body
-}
+        closeForm = (p1, p2) => {
+            // body
+        }
 
 
-##### Default Function parameters
+#### Default Function parameters
 
 + In ES6, we can set default function parameters while declaring the function so that whenever we do not pass parameters while calling a function, it takes the deafult function parameters. This
 
-    Eg ->   let total = () => 5;
+        Eg ->   
+            let total = () => 5;
             let getValue = (value = "Vaibhav", bonus = 5, percent = bonus * total()) => {
                 console.log("Value : " + value + ", Bonus : " + bonus + ", Percent : " + percent);
             };
@@ -81,47 +82,47 @@ closeForm = (p1, p2) => {
             getValue("Patel", undefined, 20); // It will print Value : Patel, Bonus : 5, Percent : 20
 
 
-            + undefined is used if we want to specify a parameter and skip in between.
+    + undefined is used if we want to specify a parameter and skip in between.
 
 
-##### Rest and Spread Operator
+#### Rest and Spread Operator
 
-let displayColors = function(message, ...colors) { 
-    console.log(message);
+    let displayColors = function(message, ...colors) { 
+        console.log(message);
 
-    for(let i in colors){  
-        
-        console.log(colors[i]);
-    }
-};
+        for(let i in colors){  
+            
+            console.log(colors[i]);
+        }
+    };
 
 +  "...variable" stands for Rest Operator, through this we can access selective arguments.
 + with help of rest operator you can add any number of parameters without affecting other parameters.
 + colors is an array
 
-let message = " List of Colors ";
-displayColors(message, 'Red');
-displayColors(message, 'Red', 'Blue');
-displayColors(message, 'Red', 'Blue', 'Green');
+        let message = " List of Colors ";
+        displayColors(message, 'Red');
+        displayColors(message, 'Red', 'Blue');
+        displayColors(message, 'Red', 'Blue', 'Green'); 
 
 --- 
 
 Spread Operator -> opposite of rest
 
-let displayColors =(message, ...listOfColors) => {
+    let displayColors =(message, ...listOfColors) => {
 
-     console.log(message);
+        console.log(message);
 
-     for(let i in listOfColors){
-         console.log(listOfColors[i]);
-     }
+        for(let i in listOfColors){
+            console.log(listOfColors[i]);
+        }
 
-};
+    };
 
-message = "List of Colors";
-let colors = ['Red', 'Blue', 'Green'];
+    message = "List of Colors";
+    let colors = ['Red', 'Blue', 'Green'];
 
-displayColors(message, ...colors);
+    displayColors(message, ...colors);
 
 + Spread Operator is specified during Function call.
 
