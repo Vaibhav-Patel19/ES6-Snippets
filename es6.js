@@ -23,17 +23,18 @@
 // objects - Objects in JS are collection of key and pairs.
 
 // const person = {
-//     name: 'Vaibhav',
+//     name: 'Vaibhav Patel',
 //     walk: function(){},  // if a function is inside an object, we refer to it as method.
 //     talk() {} // method/function declaration inside an object'.
 // };
 
 // person.talk(); //access method
-// person.name = 'Vaibhav Patel' //Hardcoded.
+// person.name = 'Vaibhav Bhatt' //Hardcoded.
 
 // const targetMember = 'name';
-// person[targetMember.value] = 'Vaibhav Patel'; // Dynamic access
+// person[targetMember.value] = 'Vaibhav Bhatt'; // Dynamic access
 
+// console.log(person.name)
 
 // This keyword
 
@@ -58,29 +59,29 @@
 //     //code here
 // }
 
-// Default Function Parameters - It put default value if parameter is not provided.
+// Default Function Parameters - It puts default value if parameter is not provided.
 // let total = () => 5;
 // let getValue = (value = "Vaibhav", bonus = 5, percent = bonus * total()) => {
-//     console.log(value + " " + bonus + " " + percent);
+//     console.log("Value : " + value + ", Bonus : " + bonus + ", Percent : " + percent);
 // };
 
 // getValue(undefined, 15);
-// getValue("Patel");
+// getValue("Patel", undefined, 20);
 
 
 //Rest Operator
 // It is specified in function declaration.
-// let displayColors = function(message, ...colors) { // "...variable" stands for Rest Operator, through this we can access selective arguments.
+let displayColors = function(message, ...colors) { // "...variable" stands for Rest Operator, through this we can access selective arguments.
 
-//     //with help of rest operator you can add any number of parameters without affecting other parameters.
-//     //colors is an array
-//     console.log(message);
+    //with help of rest operator you can add any number of parameters without affecting other parameters.
+    //colors is an array
+    console.log(message);
 
-//     for(let i in colors){  
+    for(let i in colors){  
         
-//         console.log(colors[i]);
-//     }
-// };
+        console.log(colors[i]);
+    }
+};
 
 // let message = " List of Colors ";
 // displayColors(message, 'Red');
@@ -183,18 +184,18 @@
 
 // For LOOP
 
-let colors = ['red', 'blue', 'green'];
+// let colors = ['red', 'blue', 'green'];
 
-for(let i in colors){
-    console.log(colors[i]); 
-}
+// for(let i in colors){
+//     console.log(colors[i]); 
+// }
 
-for(let i of colors){
-    console.log(i);
-}
+// for(let i of colors){
+//     console.log(i);
+// }
 
-let name = "Vaibhav";
+// let name = "Vaibhav";
 
-for(let j of name){
-    console.log(j);
-}
+// for(let j of name){
+//     console.log(j);
+// }
